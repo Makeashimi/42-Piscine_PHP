@@ -1,0 +1,154 @@
+img {
+	display: block;
+	margin: auto;
+}
+
+body {
+	background-color: #505050;
+	margin: 20px auto;
+	width: 1420px;
+}
+
+.top {
+	background-color: #909090;
+	width: 1420px;
+	height: 137px;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 10px 10px 10px black;
+}
+
+#doft {
+	float: left;
+	width: 450px;
+	margin: 10px 0 0 10px;
+}
+
+#loupe {
+	top: 10px;
+	right: 30px;
+	position: absolute;
+}
+
+#recharger {
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	position: absolute;
+}
+
+#croix {
+	right: 10px;
+	bottom: 10px;
+	position: absolute;
+}
+
+.left {
+	float: left;
+	background-color: #909090;
+	width: 100px;
+	height: 400px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	margin: 20px 0 0 30px;
+	padding: 7px 20px 15px 20px;
+}
+
+.left img {
+	width: 70px;
+	margin-top: 8px;
+}
+
+.left > .oeil {
+	border: 5px solid red;
+	border-radius: 5px;
+	margin-top: 4px;
+}
+
+.middle {
+	float: left;
+	background-color: #909090;
+	width: 1020px;
+	height: 580px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	margin: 20px 0 0 30px;
+	position: relative;
+}
+
+.cluster {
+	width: 1000px;
+	margin-top: 8px;
+}
+
+.right {
+	float: left;
+	background-color: #909090;
+	width: 100px;
+	height: 400px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	margin: 20px 0 0 30px;
+	padding: 7px 15px 15px 20px;
+}
+
+.right > img {
+	margin-top: 8px;
+}
+
+.livre {
+	width: 70px;
+}
+
+.serviette {
+	width: 75px;
+}
+
+.brique {
+	width: 120px;
+	height: 70px;
+	background: url("resources/brick.jpg") repeat;
+	margin-top: 5px;
+	margin-left: -12px;
+}
+
+.green {
+	width: 500px;
+	height: 150px;
+	background-color: #83ff83;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	position: absolute;
+	margin: -70px 0 0 -220px;
+	padding: 10px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+.entrez {
+	font-family: 'Georgia', serif;
+	font-size: 30px;
+}
+
+.ordinateurs {
+	text-shadow: 6px 4px 8px red;
+}
+
+.recherche {
+	width: 376px;
+	height: 20px;
+	border: 2px inset #f1edec;
+	margin-top: 2px;
+	margin-left: 2px;
+	border-radius: 1px;
+	border-bottom-color: #eeeeee;
+}
+
+.bouton {
+	border: 1px solid #a8a4a5;
+	letter-spacing: 0.5px;
+	height: 22px;
+	margin-left: 4px;
+	font-size: 12px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+}

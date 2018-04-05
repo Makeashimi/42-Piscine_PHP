@@ -1,0 +1,63 @@
+.back {
+	color: white;
+	text-align: center;
+	background: green;
+	height: 175px;
+	font-size: 2em;
+	width: 300px;
+	border-radius: 300px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	padding-top: 125px;
+	cursor: pointer;
+}
+
+.delete {
+	color: white;
+	text-align: center;
+	background: red;
+	height: 175px;
+	font-size: 2em;
+	width: 300px;
+	border-radius: 300px;
+	position: absolute;
+	top: 100px;
+	left: 410px;
+	padding-top: 125px;
+	cursor: pointer;
+}
+
+.edit_1 {
+	color: white;
+	text-align: center;
+	background: blue;
+	height: 200px;
+	font-size: 2em;
+	width: 300px;
+	border-radius: 300px;
+	position: absolute;
+	top: 100px;
+	left: 720px;
+	padding-top: 100px;
+}
+
+.edit_2 {
+	color: white;
+	text-align: center;
+	background: orange;
+	height: 220px;
+	font-size: 2em;
+	width: 300px;
+	border-radius: 300px;
+	position: absolute;
+	top: 100px;
+	left: 1030px;
+	padding-top: 80px;
+}
+
+.wrap {
+	position: absolute;
+	top: 70px;
+	left: 500px;
+}

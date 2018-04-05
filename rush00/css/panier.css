@@ -1,0 +1,41 @@
+/*
+PANIER
+*/
+
+table {
+    font-family: Gill Sans, sans-serif;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #bb8de0;
+    color: white;
+}
+
+tr {
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+ }
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.titre {
+    text-align: center;
+
+}
+
+img {
+    width: 500px;
+}
+
+.prix {
+    text-align: right;
+}

@@ -1,0 +1,45 @@
+body {
+	background-color: #87a8db;
+}
+
+.before {
+	justify-content: center;
+	display: flex;
+}
+
+.principal {
+	justify-content: center;
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    background-color: #d85050;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.content {
+	display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.content a:hover {
+	background-color: #ddd;
+}
+
+.principal:hover .content {
+    display: block;
+}
