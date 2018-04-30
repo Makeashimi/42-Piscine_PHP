@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todolist</title>
+		<meta charset = "UTF-8">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src = "https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	</head>
+	<body>
+		<button id = "new">New</button>
+		<div id = "ft_list"></div>
+	</body>
+	<script src = "/day09/ex02bis/todo.js"></script>
+		<script>
+			$(document).ready(function() {
+			    var tasklist = [];
+			    var tab = Cookies.get('tab');
+			    if (!(typeof tab === "undefined")) {
+			    	tasklist = JSON.parse(tab);
+				}
+			    for (var i = 0; i < tasklist.length; i++) {
+			   		$("#ft_list").prepend(new_div(unescape(tasklist[i])));
+				}
+			    $('button').click(function() {
+			    	var task = prompt("Entrez le nom de la tache");
+			    	if (!task || task.len == 0) {
+			       	 return;
+			    }
+			    $("#ft_list").prepend(new_div(task));
+			    tasklist.push(escape(task));
+			    var encrypted = JSON.stringify(tasklist);
+			    Cookies.set('tab', encrypted, { expires: 10 });
+			});
+			$(document).on('click', '#task', function() {
+			    if (confirm('Voulez-vous supprimer cette tache ?')) {
+			        tasklist.splice(tasklist.indexOf(escape($(this).html())), 1);
+			        var encrypted = JSON.stringify(tasklist);
+			        Cookies.set('tab', encrypted, { expires: 10 });
+			        $(this).remove();
+			    }
+			});
+		});
+	</script>
+</html>

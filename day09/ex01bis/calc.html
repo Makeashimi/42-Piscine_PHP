@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calc</title>
+		<meta charset = "UTF-8">
+		<script> setInterval(function () {alert('Please, use me...');}, 30000); </script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<input id = "nb1" type = "text" value = "">
+			<select id = "operator">
+				<option value = "+">+</option>
+  				<option value = "-">-</option>
+ 				<option value = "*">*</option>
+  				<option value = "/">/</option>
+  				<option value = "%">%</option>
+			</select>
+			<input id = "nb2" type = "text" value = "">
+			<input id = "try" type = "submit" value = "Try me !">
+			<script>
+				$(document).ready(function()
+				{
+					$("#try").click(function()
+					{
+						var nbr1 = ($("#nb1").val());
+						var nbr2 = ($("#nb2").val());
+						if (isNaN(nbr1) == true || isNaN(nbr2) == true || nbr1 < 0 || nbr2 < 0)
+						{
+							alert('Error :(');
+							return ;
+						}
+						switch ($("#operator").val())
+						{
+							case '+' :
+								alert(nbr1 + nbr2);
+								console.log(nbr1 + nbr2);
+								break ;
+							case '-' :
+								alert(nbr1 - nbr2);
+								console.log(nbr1 - nbr2);
+								break ;
+							case '*' :
+								alert(nbr1 * nbr2);
+								console.log(nbr1 * nbr2);
+								break ;
+							case '/' :
+								if (nbr2 == 0)
+								{
+									alert('It’s over 9000!');
+									console.log('It’s over 9000!');
+									return ;
+								}
+								alert(nbr1 / nbr2);
+								console.log(nbr1 / nbr2);
+								break ;
+							case '%' :
+								if (nbr2 == 0)
+								{
+									alert('It’s over 9000!');
+									console.log('It’s over 9000!');
+									return ;
+								}
+								alert(nbr1 % nbr2);
+								console.log(nbr1 % nbr2);
+								break ;
+						}
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>

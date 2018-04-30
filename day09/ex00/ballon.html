@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ballon</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<div style = "width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 1000px;"
+			onclick = "
+			this.style.width = (this.style.width == '420px' ? '200px' : parseInt(this.style.width) + 10 + 'px');
+			this.style.height = (this.style.height == '420px' ? '200px' : parseInt(this.style.height) + 10 + 'px');
+			this.style.backgroundColor = (this.style.backgroundColor == 'red' ?
+			 'green' : (this.style.backgroundColor == 'green' ? 'blue' : 'red'));"
+			onmouseout = "
+			this.style.backgroundColor = (parseInt(this.style.width) > 200 ? (this.style.backgroundColor == 'red' ? 
+			 'blue' : (this.style.backgroundColor == 'blue' ? 'green' : 'red')) : this.style.backgroundColor);
+			this.style.height = this.style.width = (this.style.width == '200px' ? '200px' : parseInt(this.style.width) - 5 + 'px');">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calc</title>
+		<meta charset = "UTF-8">
+		<script> setInterval(function () {alert('Please, use me...');}, 30000); </script>
+	</head>
+	<body>
+		<div>
+			<input id = "nb1" type = "text" value = "">
+			<select id = "operator">
+				<option value = "+">+</option>
+  				<option value = "-">-</option>
+ 				<option value = "*">*</option>
+  				<option value = "/">/</option>
+  				<option value = "%">%</option>
+			</select>
+			<input id = "nb2" type = "text" value = "">
+			<input type = "submit" value = "Try me !" onclick = "
+			var nbr1 = (document.getElementById('nb1').value);
+			var nbr2 = (document.getElementById('nb2').value);
+			if (isNaN(nbr1) == true || isNaN(nbr2) == true || nbr1 < 0 || nbr2 < 0)
+			{
+				alert('Error :(');
+				return ;
+			}
+			switch (document.getElementById('operator').value)
+			{
+				case '+' :
+					alert(nbr1 + nbr2);
+					console.log(nbr1 + nbr2);
+					break ;
+				case '-' :
+					alert(nbr1 - nbr2);
+					console.log(nbr1 - nbr2);
+					break ;
+				case '*' :
+					alert(nbr1 * nbr2);
+					console.log(nbr1 * nbr2);
+					break ;
+				case '/' :
+					if (nbr2 == 0)
+					{
+						alert('It’s over 9000!');
+						console.log('It’s over 9000!');
+						return ;
+					}
+					alert(nbr1 / nbr2);
+					console.log(nbr1 / nbr2);
+					break ;
+				case '%' :
+					if (nbr2 == 0)
+					{
+						alert('It’s over 9000!');
+						console.log('It’s over 9000!');
+						return ;
+					}
+					alert(nbr1 % nbr2);
+					console.log(nbr1 % nbr2);
+					break ;
+			}">
+		</div>
+	</body>
+</html>
